@@ -33,9 +33,21 @@ function setup() {
     }
 }
 
+function drawGradientBackground(c1, c2) {
+    noFill();
+    for (let y = 0; y < height; y++) {
+        let inter = map(y, 0, height, 0, 1);
+        let c = lerpColor(c1, c2, inter);
+        stroke(c);
+        line(0, y, width, y);
+    }
+    noStroke();
+}
+
 function draw() {
-    // Fondo azul con efecto de profundidad
-    background(30, 35, 50);
+    let color1 = color(30, 30, 70);
+    let color2 = color(70, 30, 80);
+    drawGradientBackground(color1, color2);
 
     // Actualizar y mostrar neuronas
     neurons.forEach(neuron => {

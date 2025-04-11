@@ -1,24 +1,27 @@
 /* style.css */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto+Mono:wght@300;400;500;700&display=swap');
 
 :root {
-    --primary-color: #00b4ff;
-    --primary-light: #00e5ff;
+    --heading-font: 'Audiowide', cursive;
+    --body-font: 'Roboto Mono', monospace;
+
+    --primary-color: #ff8c00;
+    --primary-light: #ffae42;
     --primary-gradient: linear-gradient(to right, var(--primary-light), var(--primary-color));
-    --secondary-light: #d0f0ff;
-    --background-color: rgb(30, 35, 50);
+    --secondary-light: #ffd700;
+    --background-color: transparent;
     --text-color: #ffffff;
-    --card-bg: rgba(30, 60, 120, 0.15);
-    --card-bg-hover: rgba(50, 90, 150, 0.2);
-    --card-border: rgba(150, 230, 255, 0.2);
-    --card-border-hover: rgba(170, 240, 255, 0.5);
-    --text-shadow: rgba(0, 200, 255, 0.2);
+    --card-bg: rgba(160, 160, 160, 0.6);
+    --card-bg-hover: rgba(180, 125, 80, 0.6);
+    --card-border: rgba(180, 180, 180, 0.35);
+    --card-border-hover: rgba(255, 174, 66, 0.7);
+    --text-shadow: rgba(255, 140, 0, 0.3);
     --shadow-size-large: 10px;
     --shadow-size-medium: 8px;
     --shadow-size-small: 6px;
-    --card-shadow: rgba(0, 150, 255, 0.18);
-    --card-shadow-hover: rgba(0, 150, 255, 0.2);
-    --glow-shadow: rgba(0, 200, 255, 0.15);
+    --card-shadow: rgba(160, 160, 160, 0.18);
+    --card-shadow-hover: rgba(160, 160, 160, 0.25);
+    --glow-shadow: rgba(255, 165, 0, 0.35);
 }
 
 * {
@@ -32,7 +35,7 @@ body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--body-font);
     color: var(--text-color);
 }
 
@@ -66,6 +69,7 @@ header {
 }
 
 .logo h1 {
+    font-family: var(--heading-font);
     font-size: 4.5rem;
     font-weight: 700;
     background: var(--primary-gradient);
@@ -77,6 +81,7 @@ header {
 }
 
 .subtitle p {
+    font-family: var(--body-font);
     font-size: 1.3rem;
     opacity: 0.9;
     font-weight: 300;
@@ -135,6 +140,10 @@ header {
     }
 }
 
+.tool-card.interacted {
+    background-color: rgba(110, 90, 140, 0.6);
+}
+
 .tool-card:hover {
     transform: translateY(-10px) scale(1.03);
     background-color: var(--card-bg-hover);
@@ -153,6 +162,7 @@ header {
 }
 
 .tool-card h3 {
+    font-family: var(--heading-font);
     font-size: 1.6rem;
     margin-bottom: 0.7rem;
     font-weight: 600;
@@ -163,6 +173,7 @@ header {
 }
 
 .tool-card p {
+    font-family: var(--body-font);
     font-size: 1rem;
     line-height: 1.6;
     color: var(--text-color);
