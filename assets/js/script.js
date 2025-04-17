@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const toolCards = document.querySelectorAll('.tool-card');
 
-    // Animación de entrada
+    // Entry animation
     toolCards.forEach((card, index) => {
         card.style.opacity = 0;
         card.style.transform = 'translateY(20px)';
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }, index * 100);
     });
 
-    // Efecto hover y click en las tarjetas
+    // Hover and click effects
     toolCards.forEach(card => {
         card.addEventListener('mouseenter', function () {
             this.style.transform = 'translateY(-10px) scale(1.03)';
@@ -27,14 +27,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
         card.addEventListener('click', function () {
             const toolName = this.querySelector('h3').textContent;
-            console.log(`Herramienta seleccionada: ${toolName}`);
+            console.log(`Tool selected: ${toolName}`);
 
-            // Efecto visual al hacer clic
+            // Visual click effect
             this.style.transform = 'scale(0.98)';
             setTimeout(() => {
                 this.style.transform = 'translateY(-10px) scale(1.03)';
             }, 150);
         });
     });
-
 });
