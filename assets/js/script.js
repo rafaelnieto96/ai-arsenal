@@ -34,6 +34,16 @@ document.addEventListener('DOMContentLoaded', function () {
             setTimeout(() => {
                 this.style.transform = 'translateY(-10px) scale(1.03)';
             }, 150);
+
+            // Redirects
+            if (toolName === 'Translate Engine') {
+                window.location.href = 'https://translateengine.pythonanywhere.com/';
+            } else if (toolName === 'Legal Guardian') {
+                window.location.href = 'https://legalguardian.pythonanywhere.com/';
+            } else if (toolName === 'Text-Forge') {
+                window.location.href = 'https://textforge.pythonanywhere.com/';
+            }
+            // ToDo: Deep Vision redirect
         });
     });
 });
