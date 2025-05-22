@@ -39,9 +39,13 @@ document.addEventListener('DOMContentLoaded', function () {
             if (toolName === 'Translate Engine') {
                 window.location.href = 'https://translateengine.pythonanywhere.com/';
             } else if (toolName === 'Legal Guardian') {
-                window.location.href = 'https://legalguardian.pythonanywhere.com/';
+                window.location.href = 'https://legalguardian2.pythonanywhere.com/';
             } else if (toolName === 'Text-Forge') {
                 window.location.href = 'https://textforge.pythonanywhere.com/';
+            } else if (toolName === 'Brief Engine') {
+                window.location.href = 'https://briefengine.pythonanywhere.com/';
+            } else if (toolName === 'Code Alchemist') {
+                window.location.href = 'https://codealchemist.pythonanywhere.com/';
             }
             // ToDo: Deep Vision redirect
         });
