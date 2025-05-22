@@ -40,12 +40,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 window.location.href = 'https://translateengine.pythonanywhere.com/';
             } else if (toolName === 'Legal Guardian') {
                 window.location.href = 'https://legalguardian2.pythonanywhere.com/';
-            } else if (toolName === 'Text-Forge') {
+            } else if (toolName === 'Text Forge') {
                 window.location.href = 'https://textforge.pythonanywhere.com/';
             } else if (toolName === 'Brief Engine') {
                 window.location.href = 'https://briefengine.pythonanywhere.com/';
             } else if (toolName === 'Code Alchemist') {
                 window.location.href = 'https://codealchemist.pythonanywhere.com/';
+            } else if (toolName === 'Data Nexus') {
+                window.location.href = 'https://datanexus.pythonanywhere.com/';
             }
             // ToDo: Deep Vision redirect
         });

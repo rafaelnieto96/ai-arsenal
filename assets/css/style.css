@@ -55,7 +55,7 @@ canvas {
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
     position: relative;
     z-index: 10;
@@ -89,8 +89,10 @@ header {
 
 .tools-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(4, minmax(320px, 1fr));
+    /* Mantiene ancho mínimo de 320px por tarjeta */
     gap: 2.5rem;
+    justify-items: start;
 }
 
 .tool-card {
@@ -105,6 +107,7 @@ header {
     box-shadow: 0 8px 32px var(--card-shadow);
     position: relative;
     overflow: hidden;
+    width: 100%;
 }
 
 .tool-card::before {
@@ -177,6 +180,22 @@ header {
     line-height: 1.6;
     color: var(--text-color);
     text-shadow: 0 1px 8px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 1400px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .tools-grid {
+        grid-template-columns: repeat(3, minmax(320px, 1fr));
+    }
+}
+
+@media (max-width: 1100px) {
+    .tools-grid {
+        grid-template-columns: repeat(2, minmax(320px, 1fr));
+    }
 }
 
 @media (max-width: 768px) {
