@@ -1,4 +1,3 @@
-// script.js
 document.addEventListener('DOMContentLoaded', function () {
     const toolCards = document.querySelectorAll('.tool-card');
 
@@ -48,8 +47,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 window.location.href = 'https://codealchemist.pythonanywhere.com/';
             } else if (toolName === 'Data Nexus') {
                 window.location.href = 'https://datanexus.pythonanywhere.com/';
+            } else if (toolName === 'Deep Vision') {
+                window.location.href = 'https://deepvision.pythonanywhere.com/';
             }
-            // ToDo: Deep Vision redirect
         });
     });
 });
