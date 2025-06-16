@@ -49,6 +49,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 window.location.href = 'https://datanexus.pythonanywhere.com/';
             } else if (toolName === 'Deep Vision') {
                 window.location.href = 'https://deepvision.pythonanywhere.com/';
+            } else if (toolName === 'Voice Reactor') {
+                window.location.href = 'https://voicereactor.pythonanywhere.com/';
             }
         });
     });
